@@ -1,0 +1,30 @@
+# Node.js (Backend)
+node_modules/
+.env
+dist/
+build/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# React (Frontend)
+backend/node_modules/
+backendend/build/
+backend/.env
+backendend/.cache
+*.lock
+
+# OS / IDE Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+logs/

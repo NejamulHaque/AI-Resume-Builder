@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Resume Builder Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.2);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-200 via-white to-purple-100 flex items-center justify-center p-6">
+
+  <div class="max-w-5xl w-full glass rounded-2xl p-8 md:p-16">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-extrabold text-purple-800">Contact <span class="text-purple-600">Us</span></h2>
+      <p class="text-gray-700 mt-4">Have questions, suggestions, or feedback? We'd love to hear from you!</p>
+    </div>
+
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="contactForm">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-800 mb-1">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="John Doe"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-md" />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-800 mb-1">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-md" />
+      </div>
+
+      <div class="md:col-span-2">
+        <label for="subject" class="block text-sm font-medium text-gray-800 mb-1">Subject</label>
+        <input type="text" id="subject" name="subject" required placeholder="What's this about?"
+               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-md" />
+      </div>
+
+      <div class="md:col-span-2">
+        <label for="message" class="block text-sm font-medium text-gray-800 mb-1">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 shadow-md"></textarea>
+      </div>
+
+      <div class="md:col-span-2 text-center mt-4">
+        <button type="submit"
+                class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition">
+          <i class="fas fa-paper-plane mr-2"></i> Send Message
+        </button>
+      </div>
+    </form>
+
+    <div id="form-response" class="text-center mt-6 text-purple-700 font-semibold hidden">Thank you for contacting us!</div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

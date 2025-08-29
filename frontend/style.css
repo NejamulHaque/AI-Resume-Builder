@@ -1,0 +1,47 @@
+.required-field {
+  border-left: 3px solid #ef4444;
+}
+.error-message {
+  color: #ef4444;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+.resume-section {
+  transition: all 0.3s ease;
+}
+.resume-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.floating-btn {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.chat-bubble {
+  border-radius: 20px 20px 20px 0;
+}
+.user-bubble {
+  border-radius: 20px 20px 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #eb6060;
+}
+.glass {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
